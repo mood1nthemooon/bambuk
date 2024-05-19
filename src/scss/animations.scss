@@ -1,0 +1,22 @@
+@keyframes deck {
+    0% {
+        scale: 0;
+    }
+    70% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes poptop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,55 @@
+@include media-breakpoint-up(xs) {
+    header, main {
+        padding: var(--moo-size-l) var(--moo-size-xl);
+    }
+    .logo {
+        flex: 1 1 auto;
+        text-align: center;
+        font-size: var(--moo-size-l);
+    }
+    .bamboo {
+        &-main {
+            &_deck {
+                top: 40vh;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {
+    .logo {
+        font-size: var(--moo-size-xl);
+    }
+    .bamboo {
+        &-main {
+            &_deck {
+                top: 35vh;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    main, header {
+        padding: var(--moo-size-4xl) var(--moo-size-7xl);
+    }
+    .bamboo {
+        &-main {
+            &_deck {
+                top: 30vh;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .logo {
+        text-align: start;
+    }
+    .bamboo {    
+        &-main {
+            &_deck {
+                top: auto;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xxl) {}
