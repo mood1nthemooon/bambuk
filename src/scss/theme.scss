@@ -167,6 +167,8 @@ header {
         z-index: 5;
         animation: poptop 1s ease 0.2s 1 forwards;
         pointer-events: none;
+        text-transform: uppercase;
+        // line-height: 100px;
 
         @each $line in 1, 2, 3 {
             span:nth-child(#{$line}) {
@@ -209,5 +211,9 @@ header {
             position: relative;
             // z-index: 2;
         }
+    }
+    
+    &-gallery {
+        background: var(--moo-clr-black);
     }
 }
