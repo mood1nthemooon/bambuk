@@ -1,13 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BAMBUK | PHOTOGRAPHER</title>
   </head>
   <body>
     <div class="container-fluid d-flex flex-column bamboo-section">
-      <header class="d-flex align-items-center justify-content-between d-flex-reverse d-lg-flex">
+      <header
+        class="d-flex align-items-center justify-content-between d-flex-reverse d-lg-flex"
+      >
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -15,16 +17,19 @@
           data-bs-target="#navbarToggleExternalContent"
           aria-controls="navbarToggleExternalContent"
           aria-expanded="false"
-          aria-label="Toggle navigation">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 18L20 18"/>
-            <path d="M4 12L20 12"/>
-            <path d="M4 6L20 6"/>
+          aria-label="Toggle navigation"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M4 18L20 18" />
+            <path d="M4 12L20 12" />
+            <path d="M4 6L20 6" />
           </svg>
         </button>
-        <span class="moo-title logo">
-          Anastasia Bambuk
-        </span>
+        <span class="moo-title logo"> Anastasia Bambuk </span>
         <nav class="moo-menu d-none d-lg-flex">
           <ul class="moo-title">
             <li><a href="#gallery">Gallery</a></li>
@@ -32,7 +37,9 @@
           </ul>
         </nav>
       </header>
-      <main class="d-flex flex-fill flex-column align-items-center justify-content-between">
+      <main
+        class="d-flex flex-fill flex-column align-items-center justify-content-between"
+      >
         <div class="bamboo-main w-100" data-colon="&CloseCurlyQuote;">
           <h1 class="bamboo-hello">
             <span>Hello, i'm</span>
@@ -41,12 +48,15 @@
           </h1>
         </div>
         <div class="bamboo-main_deck">
-          <img src="/assets/img/h-1.png"/>
-          <img src="/assets/img/h-2.png"/>
-          <img src="/assets/img/h-3.png"/>
+          <img src="/assets/img/h-1.png" />
+          <img src="/assets/img/h-2.png" />
+          <img src="/assets/img/h-3.png" />
         </div>
         <div class="d-flex bamboo-main_description mt-auto text-center">
-          <span class="moo-title">Photographer<br> based in SPB</span>
+          <span class="moo-title"
+            >Photographer<br />
+            based in SPB</span
+          >
         </div>
       </main>
     </div>
@@ -54,12 +64,14 @@
       <div class="row h-100 gx-0">
         <h2 class="bamboo-about moo-title">About me</h2>
         <div class="col-6 bamboo-section_side h-100">
-          <img class="bamboo-about_side-image" src="/assets/img/about_side.png" alt="about-me">
+          <img
+            class="bamboo-about_side-image"
+            src="/assets/img/about_side.png"
+            alt="about-me"
+          />
         </div>
         <div class="col-6 d-flex flex-fill bg-dark">
-          <div class="d-flex flex-fill bg-light">
-
-          </div>
+          <div class="d-flex flex-fill bg-light"></div>
           <!-- <span class="bamboo-about moo-title title-overflow">About me</span> -->
         </div>
         <!-- <h1>About me</h1> -->
@@ -67,34 +79,72 @@
     </section>
     <section class="bamboo-section container-fluid bg-light text-dark p-0">
       <div class="bamboo-gallery">
-        <div class="btn-to-scrl">
+        <div class="moo-btn-to-scrl">
           <a class="people-btn" href="#">
-            <div class="overlay-image">
-              <img id="people" src="assets/button-to-people.svg" alt="people" />
-              <div class="overlay-image_content">
-                <p class="text-light">PEOPLE</p>
-                <span class="text-light">
-                  люди потрясающие. хочу раскрыть каждого персонажа перед объективом камеры и показать насколько он прекрасен.
+            <div class="moo-overlay-image">
+              <img
+                id="people"
+                src="assets/img/button-to-people.png"
+                alt="people"
+              />
+              <div class="moo-overlay-image_content">
+                <p class="moo-title text-light">People</p>
+                <span class="moo-caption text-light">
+                  люди потрясающие. хочу раскрыть каждого персонажа перед
+                  объективом камеры и показать насколько он прекрасен.
                 </span>
               </div>
             </div>
-            <p class="text-light" id="ppl">PEOPLE</p>
+            <p class="moo-title text-light mt-3">People</p>
           </a>
           <a class="product-btn" href="#">
-            <img id="product" src="button-to-product.svg" alt="product" />
-            <p id="prod">PRODUCT</p>
-          </a>
+            <div class="moo-overlay-image">
+              <img
+                id="product"
+                src="assets/img/button-to-product.png"
+                alt="product"
+              />
+              <div class="moo-overlay-image_content">
+                <p class="moo-title text-light">Product</p>
+                <span class="moo-caption text-light">
+                  казалось бы обычные продукты пользования, 
+                  но появляется камера. стоп. всё. теперь это 
+                  главный герой кадра. клади, ставь, вешай всё 
+                  что угодно - это уже не имеет смысла, в отличии 
+                  от объекта в центре.
+                </span>
+              </div>
+            </div>
+            <p class="moo-title text-light mt-3">Product</p>
+          </a> 
           <a class="street-btn" href="#">
-            <img id="street" src="btn-to-street.svg" alt="street" />
-            <p id="str">STREET</p>
-          </a>
-        </div>
-        <hr id="hr-glr-2" />
-        <div class="cont-glr">
+            <div class="moo-overlay-image">
+              <img
+                id="street"
+                src="assets/img/btn-to-street.png"
+                alt="street"
+              />
+              <div class="moo-overlay-image_content">
+                <p class="moo-title text-light">street</p>
+                <span class="moo-caption text-light">
+                  как вид отдыха, когда ни о чем не думаешь.
+                   прогулка, где в кадр попадает не то чтобы 
+                   ерунда, но приятная глазу, а главное сердцу. 
+                </span>
+              </div>
+            </div>
+            <p class="moo-title text-light mt-3">Product</p>
+          </a> 
+          </div>
+        <hr />
+        <div class="moo-cont-glr">
           <p id="num-02">02</p>
           <p id="gallery">GALLERY</p>
         </div>
       </div>
+    </section>
+    <section>
+      
     </section>
     <!-- <div class="main">
       <div class="header-line">
