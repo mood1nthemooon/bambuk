@@ -159,26 +159,71 @@ hr {
         opacity: 1;
     }
   }
-  &-title-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Michroma", sans-serif;
-    font-size: var(--moo-size-7xl);
-    gap: var(--moo-size-5xl);
-    padding: var(--moo-size-4xl);
-  }
-  &-sub-section {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 32px;
-    padding-left: 125px;
-    display: flex;
-    flex: none;
-    width: 1100px;
-  }
+    &-title-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Michroma", sans-serif;
+        font-size: var(--moo-size-9xl);
+        gap: 30px;
+        padding: var(--moo-size-4xl);
+    }
+    &-sub-section {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 32px;
+        padding-left: 125px;
+        display: flex;
+        flex: none;
+        width: 1100px;
+    }
+    &-container-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+    }
+    &-photobooth-ppl-cont {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--moo-size-5xl);
+        width: 1750px;
+          
+   
+        &_left {
+            display: inherit;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            img {
+                &:nth-child(4n) {
+                    grid-column: 1 / 4;
+                }
+            }
+
+            position: relative;
+            grid-gap: inherit;
+        }
+
+        &_right {
+            display: inherit;
+            grid-template-columns: 1fr;
+            
+        }
+
+        &_center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--moo-size-5xl);
+            gap: var(--moo-size-5xl);
+        }
+
+    
 }
+
 #p-1 {
     color: #FAC613
 }
@@ -325,4 +370,5 @@ hr {
   &-gallery {
     background: var(--moo-clr-black);
   }
+}
 }
