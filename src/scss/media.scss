@@ -7,48 +7,32 @@
         text-align: center;
         font-size: var(--moo-size-l);
     }
-    .bamboo {
-        &-main {
-            &_deck {
-                top: 40vh;
-            }
-        }
+    .bamboo-main_deck {
+        top: 40vh;
     }
 }
 @include media-breakpoint-up(sm) {
     .logo {
         font-size: var(--moo-size-xl);
     }
-    .bamboo {
-        &-main {
-            &_deck {
-                top: 35vh;
-            }
-        }
+    .bamboo-main_deck {
+        top: 35vh;
     }
 }
 @include media-breakpoint-up(md) {
     main, header {
         padding: var(--moo-size-4xl) var(--moo-size-7xl);
     }
-    .bamboo {
-        &-main {
-            &_deck {
-                top: 30vh;
-            }
-        }
+    .bamboo-main_deck {
+        top: 30vh;
     }
 }
 @include media-breakpoint-up(lg) {
     .logo {
         text-align: start;
     }
-    .bamboo {    
-        &-main {
-            &_deck {
-                top: auto;
-            }
-        }
+    .bamboo-main_deck {
+        top: auto;
     }
 }
 @include media-breakpoint-up(xl) {}
