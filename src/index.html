@@ -95,77 +95,95 @@
     </section>
     <section
       id="gallery"
-      class="bamboo-section container-fluid bg-dark text-light p-0"
+      class="bamboo-section container-fluid d-flex flex-column text-light p-0"
     >
-      <div class="bamboo-gallery">
-        <div class="moo-btn-to-scrl">
-          <a class="people-btn" href="#people">
-            <div class="moo-overlay-image">
-              <img
-                id="people"
-                src="assets/img/button-to-people.png"
-                alt="people"
-              />
-              <div class="moo-overlay-image_content">
-                <p class="text-light">people</p>
-                <span class="moo-caption text-light">
-                  люди потрясающие. хочу раскрыть каждого персонажа перед
-                  объективом камеры и показать насколько он прекрасен.
-                </span>
+      <div class="bamboo-gallery d-flex flex-fiil">
+        <div class="d-flex flex-row position-relative w-100">
+          <div class="moo-btn-to-scrl flex-column flex-grow-1 flex-md-row">
+            <a class="people-btn" href="#people">
+              <div class="moo-overlay-image">
+                <img src="assets/img/button-to-people.png" alt="people" />
+                <div class="moo-overlay-image_content">
+                  <p class="text-light">people</p>
+                  <span class="moo-caption text-light">
+                    люди потрясающие. хочу раскрыть каждого персонажа перед
+                    объективом камеры и показать насколько он прекрасен.
+                  </span>
+                </div>
+              </div>
+              <p class="moo-title text-light mt-3 d-none d-md-block">People</p>
+            </a>
+            <a class="product-btn" href="#product">
+              <div class="moo-overlay-image">
+                <img src="assets/img/button-to-product.png" alt="product" />
+                <div class="moo-overlay-image_content">
+                  <p class="text-light">product</p>
+                  <span class="moo-caption text-light">
+                    казалось бы обычные продукты пользования, но появляется
+                    камера. стоп. всё. теперь это главный герой кадра. клади,
+                    ставь, вешай всё что угодно - это уже не имеет смысла, в
+                    отличии от объекта в центре.
+                  </span>
+                </div>
+              </div>
+              <p class="moo-title text-light mt-3 d-none d-md-block">Product</p>
+            </a>
+            <a class="street-btn" href="#street">
+              <div class="moo-overlay-image">
+                <img
+                  id="street"
+                  src="assets/img/btn-to-street.png"
+                  alt="street"
+                />
+                <div class="moo-overlay-image_content">
+                  <p class="text-light">street</p>
+                  <span class="moo-caption text-light">
+                    как вид отдыха, когда ни о чем не думаешь. прогулка, где в
+                    кадр попадает не то чтобы ерунда, но приятная глазу, а
+                    главное сердцу.
+                  </span>
+                </div>
+              </div>
+              <p class="moo-title text-light mt-3 d-none d-md-block">Street</p>
+            </a>
+          </div>
+          <div class="h-100 pt-4">
+            <div
+              class="moo-line-gallery d-flex flex-column justify-content-between h-100 d-md-none"
+            >
+              <div class="moo-title">
+                <span class="moo-text-white">GALLERY</span>
+              </div>
+              <div class="moo-title">
+                <span class="moo-text-yellow">GALLERY</span>
+              </div>
+              <div class="moo-title">
+                <span class="moo-text-white">GALLERY</span>
+              </div>
+              <div class="moo-title">
+                <span class="moo-text-yellow">GALLERY</span>
+              </div>
+              <div class="moo-title">
+                <span class="moo-text-white">GALLERY</span>
               </div>
             </div>
-            <p class="moo-title text-light mt-3">People</p>
-          </a>
-          <a class="product-btn" href="#product">
-            <div class="moo-overlay-image">
-              <img
-                id="product"
-                src="assets/img/button-to-product.png"
-                alt="product"
-              />
-              <div class="moo-overlay-image_content">
-                <p class="text-light">product</p>
-                <span class="moo-caption text-light">
-                  казалось бы обычные продукты пользования, но появляется
-                  камера. стоп. всё. теперь это главный герой кадра. клади,
-                  ставь, вешай всё что угодно - это уже не имеет смысла, в
-                  отличии от объекта в центре.
-                </span>
-              </div>
-            </div>
-            <p class="moo-title text-light mt-3">Product</p>
-          </a>
-          <a class="street-btn" href="#street">
-            <div class="moo-overlay-image">
-              <img
-                id="street"
-                src="assets/img/btn-to-street.png"
-                alt="street"
-              />
-              <div class="moo-overlay-image_content">
-                <p class="text-light">street</p>
-                <span class="moo-caption text-light">
-                  как вид отдыха, когда ни о чем не думаешь. прогулка, где в
-                  кадр попадает не то чтобы ерунда, но приятная глазу, а главное
-                  сердцу.
-                </span>
-              </div>
-            </div>
-            <p class="moo-title text-light mt-3">Product</p>
-          </a>
-        </div>
-        <div class="moo-page">
-          <p id="num-02">02</p>
-          <p>GALLERY</p>
+          </div>
         </div>
       </div>
+      <div class="moo-page d-none d-md-flex">
+        <p>02</p>
+        <p>GALLERY</p>
+      </div>
     </section>
-    <section class="bamboo-section container-fluid bg-light text-dark p-0">
+    <section
+      id="people"
+      class="bamboo-section container-fluid bg-light text-dark p-0"
+    >
       <div class="people">
         <div class="moo-title-section">
-          <p class="moo-text-yellow">PEOPLE</p>
-          <p class="moo-text-black">PEOPLE</p>
-          <p class="moo-text-blue">PEOPLE</p>
+          <p class="moo-text-yellow m-0">PEOPLE</p>
+          <p class="moo-text-black m-0">PEOPLE</p>
+          <p class="moo-text-blue m-0">PEOPLE</p>
         </div>
         <div class="moo-sub-section">
           <p>
@@ -176,43 +194,46 @@
         <div class="moo-container-flex">
           <div class="moo-photobooth-ppl-cont">
             <div class="moo-photobooth-ppl-cont_left">
-              <img src="assets/img/1pe.png" />
-              <img src="assets/img/2pe.png" />
-              <img src="assets/img/3pe.png" />
-              <img src="assets/img/5pe.jpg" />
-              <img src="assets/img/8pe.png" />
-              <img src="assets/img/9pe.png" />
-              <img src="assets/img/10pe.png" />
+              <img class="photo" class="photo" src="assets/img/1pe.png" />
+              <img class="photo" src="assets/img/2pe.png" />
+              <img class="photo" src="assets/img/3pe.png" />
+              <img class="photo" src="assets/img/5pe.jpg" />
+              <img class="photo" src="assets/img/8pe.png" />
+              <img class="photo" src="assets/img/9pe.png" />
+              <img class="photo" src="assets/img/10pe.png" />
             </div>
             <div class="moo-photobooth-ppl-cont_right">
-              <img src="assets/img/4pe.png" />
-              <img src="assets/img/7pe.png" />
-              <img src="assets/img/11pe.png" />
+              <img class="photo" src="assets/img/4pe.png" />
+              <img class="photo" src="assets/img/7pe.png" />
+              <img class="photo" src="assets/img/11pe.png" />
             </div>
           </div>
         </div>
-        <div class="moo-photobooth-ppl-cont_center">
-          <img id="ppl-12" src="assets/img/12pe.png" />
-          <img id="ppl-13" src="assets/img/13pe.png" />
+        <div class="moo-photobooth-ppl-cont-big_center">
+          <img class="photo" src="assets/img/12pe.png" />
+          <img class="photo" src="assets/img/13pe.png" />
+        </div>
+        <div class="moo-photobooth-ppl-cont-4pic_center">
+          <img class="photo" src="assets/img/14pe.png" />
+          <img class="photo" src="assets/img/15pe.png" />
+          <img class="photo" src="assets/img/16pe.png" />
+          <img class="photo" src="assets/img/17pe.png" />
+        </div>
+        <div class="moo-photobooth-ppl-cont-big_center">
+          <img class="photo" src="assets/img/19pe.png" />
+          <img class="photo" src="assets/img//18pe.png" />
         </div>
         <div class="moo-photobooth-ppl-cont_center">
-          <img id="ppl-14" src="assets/img/14pe.png" />
-          <img id="ppl-15" src="assets/img/15pe.png" />
-          <img id="ppl-16" src="assets/img/16pe.png" />
-          <img id="ppl-17" src="assets/img/17pe.png" />
-        </div>
-        <div class="moo-photobooth-ppl-cont_center">
-          <img id="ppl-13" src="assets/img/19pe.png" />
-          <img id="ppl-12" src="assets/img//18pe.png" />
-        </div>
-        <div class="moo-photobooth-ppl-cont_center">
-          <img id="ppl-13" src="assets/img/20pe.png" />
-          <img id="ppl-12" src="assets/img//21pe.png" />
-          <img id="ppl-12" src="assets/img//22pe.png" />
+          <img class="photo" src="assets/img/20pe.png" />
+          <img class="photo" src="assets/img//21pe.png" />
+          <img class="photo" src="assets/img//22pe.png" />
         </div>
       </div>
     </section>
-    <section class="bamboo-section container-fluid bg-light text-dark p-0">
+    <section
+      id="product"
+      class="bamboo-section container-fluid bg-light text-dark p-0"
+    >
       <div class="product">
         <div class="moo-title-section">
           <p class="moo-text-yellow">PRODUCT</p>
@@ -226,17 +247,17 @@
           </p>
         </div>
         <div class="moo-photobooth-ppl-cont_center">
-          <img src="assets/img/1pr.png" />
-          <img src="assets/img//2pr.png" />
-          <img src="assets/img//3pr.png" />
+          <img class="photo" src="assets/img/1pr.png" />
+          <img class="photo" src="assets/img//2pr.png" />
+          <img class="photo" src="assets/img//3pr.png" />
         </div>
         <div class="moo-photobooth-ppl-cont_center">
-          <img src="assets/img/4pr.png" />
+          <img class="photo" src="assets/img/4pr.png" />
         </div>
         <div class="moo-photobooth-ppl-cont_center">
-          <img src="assets/img//5pr.png" />
-          <img src="assets/img//6pr.png" />
-          <img src="assets/img//7pr.png" />
+          <img class="photo" src="assets/img//5pr.png" />
+          <img class="photo" src="assets/img//6pr.png" />
+          <img class="photo" src="assets/img//7pr.png" />
         </div>
       </div>
     </section>
@@ -254,67 +275,92 @@
           </p>
         </div>
         <div class="moo-photobooth-ppl-cont_center">
-          <img src="assets/img//str1.png" />
-          <img src="assets/img//str2.png" />
-          <img src="assets/img//str3.png" />
+          <img class="photo" src="assets/img//str1.png" />
+          <img class="photo" src="assets/img//str2.png" />
+          <img class="photo" src="assets/img//str3.png" />
         </div>
         <div class="moo-photobooth-ppl-cont_center">
-          <img src="assets/img//str4.png" />
-          <img src="assets/img//str5.png" />
-          <img src="assets/img//str6.png" />
+          <img class="photo" src="assets/img//str4.png" />
+          <img class="photo" src="assets/img//str5.png" />
+          <img class="photo" src="assets/img//str6.png" />
         </div>
         <div class="moo-photobooth-ppl-cont_center">
-          <img src="assets/img//str7.png" />
-          <img src="assets/img//str8.png" />
-          <img src="assets/img//str9.png" />
+          <img class="photo" src="assets/img//str7.png" />
+          <img class="photo" src="assets/img//str8.png" />
+          <img class="photo" src="assets/img//str9.png" />
         </div>
         <div class="moo-photobooth-ppl-cont_center">
-          <img src="assets/img//str10.png" />
-          <img src="assets/img//str11.png" />
-          <img src="assets/img//str12.png" />
+          <img class="photo" src="assets/img//str10.png" />
+          <img class="photo" src="assets/img//str11.png" />
+          <img class="photo" src="assets/img//str12.png" />
         </div>
       </div>
     </section>
-    <section class="bamboo-section container-fluid bg-light text-dark p-0">
-      <div class="moo-contacts">
-        <div class="moo-contacts-cont">
-          <div class="title-contact moo-title-section">
-            <p class="moo-text-blue">contact</p>
-            <p class="moo-text-black">contact</p>
+    <section class="d-flex container-fluid bg-light text-dark p-0">
+      <div class="d-flex flex-fill align-itmes-center justify-content-center">
+        <div class="moo-contacts">
+          <div class="moo-contacts-cont">
+            <div class="title-contact moo-title-section">
+              <p class="moo-text-blue">contact</p>
+              <p class="moo-text-black">contact</p>
+            </div>
+            <div class="socials">
+              <a
+                class="instagram moo-photobooth-ppl-cont_center"
+                href="https://www.instagram.com/jj_jpg?igsh=MW5kMzJkeXR3bG04aA=="
+                target="_blank"
+              >
+                <img
+                  id="inst"
+                  src="assets/img/inst.svg"
+                  width="113px"
+                  height="113px"
+                />
+                <p class="moo-sub-socials">INSTAGRAM</p>
+              </a>
+              <a
+                class="tg moo-photobooth-ppl-cont_center"
+                href="https://t.me/jpgbestie"
+                target="_blank"
+              >
+                <img
+                  id="tg"
+                  src="assets/img/tg.svg"
+                  width="113px"
+                  height="113px"
+                />
+                <p class="moo-sub-socials">TELEGRAM-CHANNEL</p>
+              </a>
+              <a
+                class="vk moo-photobooth-ppl-cont_center"
+                href="https://vk.com/jjjpgthebest"
+                target="_blank"
+              >
+                <img
+                  id="vk"
+                  src="assets/img/vk.svg"
+                  width="113px"
+                  height="113px"
+                />
+                <p class="moo-sub-socials">VK</p>
+              </a>
+            </div>
+            <div class="watermark">
+              <p class="moo-sub-socials">2024 MOOMOON</p>
+            </div>
           </div>
-          <div class="socials">
-            <a
-              class="instagram moo-photobooth-ppl-cont_center"
-              href="https://www.instagram.com/jj_jpg?igsh=MW5kMzJkeXR3bG04aA=="
-              target="_blank"
-            >
-              <img id="inst" src="assets/img/inst.svg" width="113px" height="113px" />
-              <p class="moo-sub-socials">INSTAGRAM</p>
-            </a>
-            <a class="tg moo-photobooth-ppl-cont_center" href="https://t.me/jpgbestie" target="_blank">
-              <img id="tg" src="assets/img/tg.svg" width="113px" height="113px" />
-              <p class="moo-sub-socials">TELEGRAM-CHANNEL</p>
-            </a>
-            <a class="vk moo-photobooth-ppl-cont_center" href="https://vk.com/jjjpgthebest" target="_blank">
-              <img id="vk" src="assets/img/vk.svg" width="113px" height="113px" />
-              <p class="moo-sub-socials">VK</p>
-            </a>
-          </div>
-          <div class="watermark">
-            <p class="moo-sub-socials">2024 MOOMOON</p>
+          <div class="qr-code-tg">
+            <img id="qr-tg" src="assets/img/qr-tg.png" alt="qr-tg" />
+            <p class="moo-sub-socials">@BESTIEJJ</p>
           </div>
         </div>
-        <div class="qr-code-tg">
-          <img id="qr-tg" src="assets/img/qr-tg.png" alt="qr-tg" />
-          <p class="moo-sub-socials">@BESTIEJJ</p>
-        </div>
-      </div> 
+      </div>
     </section>
   </body>
   <script type="module" src="/js/main.js"></script>
 </html>
 
-    <!-- <div class="main">
+<!-- <div class="main">
       <div class="header-line">
         <div class="header-logo">
           <p>Anastasia Bambuk</p>
@@ -337,7 +383,7 @@
         </p>
       </div>
     </div> -->
-    <!-- <section>
+<!-- <section>
 
     </section>
     <div class="about-me">
@@ -521,6 +567,6 @@
         <p id="name-tg">@BESTIEJJ</p>
       </div>
     </div> -->
-  </body>
+<!-- </body>
   <script type="module" src="/js/main.js"></script>
-</html>
+</html> -->

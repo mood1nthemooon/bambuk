@@ -81,9 +81,6 @@ header {
     }
   }
 }
-.street {
-  border-bottom: 1px;
-}
 
 .moo {
   &-title {
@@ -145,6 +142,17 @@ header {
       color: var(--moo-clr-white);
     }
   }
+
+  &-line-gallery {
+    width: var(--moo-size-3xl);
+    & > div {
+      height: 4em;
+      & > span {
+        transform: rotate(90deg);
+        display: block;
+      }
+    }
+  }
   &-page {
     display: flex;
     justify-content: space-between;
@@ -189,10 +197,8 @@ header {
     font-weight: 200;
     font-style: normal;
     font-size: 32px;
-    padding-left: 125px;
     display: flex;
     flex: none;
-    width: 1100px;
     text-align: center;
   }
 
@@ -209,34 +215,33 @@ header {
     align-items: center;
     font-family: "Michroma", sans-serif;
     font-size: var(--moo-size-9xl);
-    gap: 30px;
+    gap: var(--moo-size-3xl);
     padding: var(--moo-size-4xl);
   }
   &-sub-section {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 32px;
-    padding-left: 125px;
+    font-size: var(--moo-size-3xl);
   }
-  &-container-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-  }
+  // //   &-container-flex {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     // margin: 50px;
+  //   }
   &-photobooth-ppl-cont {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--moo-size-5xl);
-    width: 1750px;
+    // width: 1750px;
 
     &_left {
       display: inherit;
 
       grid-template-columns: repeat(3, 1fr);
-
       img {
+        //   width: 30%;
         &:nth-child(4n) {
           grid-column: 1 / 4;
         }
@@ -258,7 +263,6 @@ header {
       padding: var(--moo-size-4xl);
       gap: var(--moo-size-5xl);
     }
-
   }
   &-contacts {
     display: flex;
@@ -268,11 +272,11 @@ header {
   }
 }
 .socials {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex: none;
-    width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: none;
+  width: 1200px;
 }
 
 .bamboo {
