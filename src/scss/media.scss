@@ -167,6 +167,12 @@
     border-radius: 0;
     overflow: visible;
 
+    .moo-overlay-image_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
     img {
       width: 400px;
       height: 600px;
