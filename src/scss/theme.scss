@@ -381,11 +381,11 @@ header {
     min-height: 100vh;
     position: relative;
 
-    &.about-section {
-      height: 100vh;
-      max-height: 100vh;
-    }
-  }
+    // &.about-section {
+    //   height: 100vh;
+    //   max-height: 100vh;
+    // }
+  // }
 
   &-about {
     position: relative;
@@ -412,4 +412,5 @@ header {
   &-gallery {
     background: var(--moo-clr-black);
   }
+}
 }
