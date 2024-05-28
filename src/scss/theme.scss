@@ -65,6 +65,7 @@ header {
 .navbar-toggler {
   padding: var(--moo-size-xs);
   justify-self: start;
+
   svg {
     width: var(--moo-size-3xl);
     height: var(--moo-size-3xl);
@@ -75,7 +76,7 @@ header {
     }
   }
 
-  &:hover {
+  &:hover, &[aria-expanded=true] {
     svg path {
       stroke: var(--moo-clr-blue);
     }
@@ -114,9 +115,16 @@ header {
       display: flex;
       gap: var(--moo-size-4xl);
       margin-bottom: 0;
+
+      &.vertical {
+        gap: initial;
+        font-family: "Michroma", sans-serif;
+        padding-left: var(--moo-size-m);
+      }
     }
     ul li {
       list-style: none;
+      list-style-position: inside;
       display: inherit;
     }
 
@@ -298,6 +306,12 @@ header {
 
 .bamboo {
   $font-size: 6vw;
+
+  &-navbar_menu {
+    position: absolute;
+    border-radius: 0;
+    background-color: var(--moo-clr-black);
+  }
 
   &-main {
     display: flex;
