@@ -127,6 +127,22 @@ header {
       }
     }
   }
+  &-about-me-title {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    font-family: "Michroma", sans-serif;
+    font-size: var(--moo-size-8xl);
+    width: 1100px;
+    padding: var(--moo-size-3xl);
+  }
+  &-about-me-sub {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--moo-size-3xl);
+    width: 400px;
+  }
   &-btn-to-scrl {
     font-family: "Michroma", sans-serif;
     font-size: var(--moo-size-xxl);
