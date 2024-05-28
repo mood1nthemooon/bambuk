@@ -129,19 +129,25 @@ header {
   }
   &-about-me-title {
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
     margin: 0;
     position: relative;
     font-family: "Michroma", sans-serif;
-    font-size: var(--moo-size-8xl);
+    font-size: 110px;
     width: 1100px;
+    height: 580px;
     padding: var(--moo-size-3xl);
+    border-right: 1px solid silver;
   }
   &-about-me-sub {
     font-family: "Montserrat", sans-serif;
     font-size: var(--moo-size-3xl);
-    width: 400px;
+    width: 650px;
+    margin: 0;
+    justify-content: center;
+    padding: var(--moo-size-3xl);
   }
   &-btn-to-scrl {
     font-family: "Michroma", sans-serif;
@@ -241,24 +247,16 @@ header {
     font-style: normal;
     font-size: var(--moo-size-3xl);
   }
-  // //   &-container-flex {
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     // margin: 50px;
-  //   }
   &-photobooth-ppl-cont {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--moo-size-5xl);
-    // width: 1750px;
 
     &_left {
       display: inherit;
 
       grid-template-columns: repeat(3, 1fr);
       img {
-        //   width: 30%;
         &:nth-child(4n) {
           grid-column: 1 / 4;
         }
@@ -294,6 +292,9 @@ header {
   justify-content: space-around;
   flex: none;
   width: 1200px;
+}
+.about-me {
+  padding: 30px;
 }
 
 .bamboo {
