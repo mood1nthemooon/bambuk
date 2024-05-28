@@ -19,6 +19,24 @@
   .bamboo-main_deck {
     top: 40vh;
   }
+  .about-me {
+    padding: 20px;
+    img {
+        width: 100px;
+        height: 150px;
+    }
+  }
+.moo-about-me-title {
+    font-size: 10px;
+    width: 700px;
+    height: 150px;
+    padding: var(--moo-size-xl);
+}
+.moo-about-me-sub {
+    font-size: var(--moo-size-xs);
+    width: 350px;
+    padding: var(--moo-size-l);
+}
   .bamboo-gallery {
     display: flex;
     justify-content: center;
@@ -204,6 +222,24 @@
       object-fit: cover;
     }
     }
+    .about-me {
+        padding: 20px;
+        img {
+            width: 300px;
+            height: 450px;
+        }
+      }
+    .moo-about-me-title {
+        font-size: 35px;
+        width: 700px;
+        height: 490px;
+        padding: var(--moo-size-xl);
+    }
+    .moo-about-me-sub {
+        font-size: var(--moo-size-l);
+        width: 350px;
+        padding: var(--moo-size-xxl);
+    }
     .gallery-title {
         margin: 0 var(--moo-size-l);
         p {
@@ -343,6 +379,24 @@
             font-size: var(--moo-size-3xl);
         }
     }
+    .about-me {
+        padding: 20px;
+        img {
+            width: 300px;
+            height: 490px;
+        }
+      }
+    .moo-about-me-title {
+        font-size: 35px;
+        width: 700px;
+        height: 490px;
+        padding: var(--moo-size-xl);
+    }
+    .moo-about-me-sub {
+        font-size: var(--moo-size-l);
+        width: 350px;
+        padding: var(--moo-size-xxl);
+    }
 
 }
 
@@ -385,6 +439,24 @@
           object-fit: cover;
         }
       }
+      .about-me {
+        padding: 25px;
+        img {
+            width: 350px;
+            height: 540px;
+        }
+      }
+    .moo-about-me-title {
+        font-size: 50px;
+        width: 900px;
+        height: 480px;
+        padding: var(--moo-size-xxl);
+    }
+    .moo-about-me-sub {
+        font-size: var(--moo-size-xxl);
+        width: 550px;
+        padding: var(--moo-size-xxl);
+    }
       .bamboo-gallery {
         display: flex;
         flex-direction: column;
@@ -527,7 +599,24 @@
             font-size: var(--moo-size-8xl);
         }
     }
-
+    .about-me {
+        padding: 30px;
+        img {
+            width: 390px;
+            height: 580px;
+        }
+      }
+    .moo-about-me-title {
+        font-size: 90px;
+        width: 1100px;
+        height: 580px;
+        padding: var(--moo-size-3xl);
+    }
+    .moo-about-me-sub {
+        font-size: var(--moo-size-3xl);
+        width: 650px;
+        padding: var(--moo-size-3xl);
+    }
     .moo-btn-to-scrl {
       gap: var(--moo-size-5xl);
       border-top: 1px solid silver;
