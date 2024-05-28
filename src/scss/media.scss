@@ -63,14 +63,13 @@
     border-radius: 2rem;
     overflow: hidden;
     .moo-caption {
-     font-size: var(--moo-size-m);
-    }
-    .moo-overlay-image_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        font-size: var(--moo-size-m);
         }
-    }
+        .moo-overlay-image_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
     img {
       width: 308px;
       height: 223px;
@@ -196,7 +195,7 @@
   .qr-code-tg {
     display: none;
   }
-
+}
 @include media-breakpoint-up(sm) {
     .logo {
         font-size: var(--moo-size-xl);
@@ -469,7 +468,7 @@
             flex-direction: column;
             justify-content: end;
         }
-      
+    
         img {
           width: 250px;
           height: 450px;
