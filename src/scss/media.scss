@@ -46,6 +46,10 @@
     font-size: var(--moo-size-m);
     width: 2250px;
     padding: var(--moo-size-l);
+    .moo-page {
+        font-size: var(--moo-size-xl);
+        justify-content: end;
+    }
 }
   .bamboo-gallery {
     display: flex;
@@ -58,9 +62,15 @@
   .moo-overlay-image {
     border-radius: 2rem;
     overflow: hidden;
-  .moo-overlay-image_content {
-    display: none;
-}
+    .moo-caption {
+     font-size: var(--moo-size-m);
+    }
+    .moo-overlay-image_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        }
+    }
     img {
       width: 308px;
       height: 223px;
@@ -186,7 +196,7 @@
   .qr-code-tg {
     display: none;
   }
-}
+
 @include media-breakpoint-up(sm) {
     .logo {
         font-size: var(--moo-size-xl);
@@ -418,6 +428,10 @@
         font-size: var(--moo-size-l);
         width: 350px;
         padding: var(--moo-size-xxl);
+        .moo-page {
+            font-size: var(--moo-size-3xl);
+            justify-content: end;
+        }
     }
     
 
@@ -485,6 +499,10 @@
         font-size: var(--moo-size-xxl);
         width: 550px;
         padding: var(--moo-size-xxl);
+        .moo-page {
+            font-size: var(--moo-size-3xl);
+            justify-content: end;
+        }
     }
       .bamboo-gallery {
         display: flex;
@@ -652,6 +670,10 @@
         font-size: var(--moo-size-3xl);
         width: 650px;
         padding: var(--moo-size-3xl);
+        .moo-page {
+            font-size: var(--moo-size-5xl);
+            justify-content: end;
+        }
     }
     .moo-btn-to-scrl {
       gap: var(--moo-size-5xl);
