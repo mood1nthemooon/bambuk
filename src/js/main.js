@@ -1,3 +1,4 @@
 // Import all of Bootstrap's CSS
-// @import "~bootstrap/scss/bootstrap";
-import '../scss/style.scss'
+import '../scss/style.scss';
+import 'bootstrap/js/dist/collapse';
+

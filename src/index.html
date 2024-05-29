@@ -10,25 +10,35 @@
       <header
         class="d-flex align-items-center justify-content-between d-flex-reverse d-lg-flex"
       >
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div class="moo-navbar position-relative">
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu-collapse"
+            aria-controls="menu-collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <path d="M4 18L20 18" />
-            <path d="M4 12L20 12" />
-            <path d="M4 6L20 6" />
-          </svg>
-        </button>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M4 18L20 18" />
+              <path d="M4 12L20 12" />
+              <path d="M4 6L20 6" />
+            </svg>
+          </button>
+          <div id="menu-collapse" class="bamboo-navbar_menu collapse">
+            <nav class="moo-menu">
+              <ul class="vstack vertical">
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
         <span class="moo-title logo"> Anastasia Bambuk </span>
         <nav class="moo-menu d-none d-lg-flex">
           <ul class="moo-title">
