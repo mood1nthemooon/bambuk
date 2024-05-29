@@ -201,13 +201,13 @@
       height: 60px;
       justify-content: flex-start;
     }
-  }
-  .moo-sub-socials {
+}
+.moo-sub-socials {
     font-size: var(--moo-size-sm);
-  }
-  .qr-code-tg {
+}
+.qr-code-tg {
     display: none;
-  }
+}
 }
 @include media-breakpoint-up(sm) {
     .logo {
