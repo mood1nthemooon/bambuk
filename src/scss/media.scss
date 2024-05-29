@@ -17,7 +17,7 @@
     top: 40vh;
   }
   .about-me {
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     img {
         width: 150px;
@@ -32,10 +32,12 @@
   .moo-about-me-title-xs {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-around;
     font-family: "Michroma", sans-serif;
-    font-size: var(--moo-size-3xl);
+    font-size: var(--moo-size-l);
     padding: var(--moo-size-sm);
+    border-bottom: 0.5px solid silver;
     p {
         margin: 0;
     }
@@ -46,10 +48,16 @@
 .moo-about-me-sub {
     font-size: var(--moo-size-m);
     width: 2250px;
-    padding: var(--moo-size-l);
+    padding: var(--moo-size-sm);
+    justify-content: center;
     .moo-page {
         font-size: var(--moo-size-xl);
         justify-content: end;
+    }
+    p {
+        margin: var(--moo-size-sm);
+        text-align: center;
+        
     }
 }
   .bamboo-gallery {
@@ -277,6 +285,10 @@
         font-size: var(--moo-size-l);
         width: 350px;
         padding: var(--moo-size-xxl);
+        p {
+            text-align: left;
+            
+        }
     }
     .gallery-title {
         margin: 0 var(--moo-size-l);
@@ -471,6 +483,10 @@
             font-size: var(--moo-size-3xl);
             justify-content: end;
         }
+        p {
+            text-align: left;
+            
+        }
     }
     
 
@@ -541,6 +557,10 @@
         .moo-page {
             font-size: var(--moo-size-3xl);
             justify-content: end;
+        }
+        p {
+            text-align: left;
+            
         }
     }
       .bamboo-gallery {
@@ -739,6 +759,9 @@
         .moo-page {
             font-size: var(--moo-size-5xl);
             justify-content: end;
+        }
+        p {
+            text-align:left; 
         }
     }
     .moo-btn-to-scrl {
