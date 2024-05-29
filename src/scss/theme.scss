@@ -231,6 +231,32 @@ header {
     flex: none;
     text-align: center;
   }
+  &-shoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+  font-style: normal;
+  font-size: var(--moo-size-3xl);
+  .shooting {
+      font-family: "Montserrat", sans-serif;
+    width: 550px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      border-radius: 100px;
+      background-color: var(--moo-clr-black);
+      padding: var(--moo-size-3xl);
+      transition: 0.5s;
+    
+    }
+    span:hover {
+      background-color: var(--moo-clr-orange);
+    }
+  }
+  }
 
   &-text {
     @each $name, $color in $colors {

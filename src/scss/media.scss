@@ -20,8 +20,9 @@
     padding: 10px;
     align-items: center;
     img {
-        width: 150px;
-        height: 225px;
+        width: 153.48px;
+        height: 185px;
+        margin: var(--moo-size-sm);
     }
     .img-ab-me {
         img {
@@ -47,7 +48,6 @@
 }
 .moo-about-me-sub {
     font-size: var(--moo-size-m);
-    width: 2250px;
     padding: var(--moo-size-sm);
     justify-content: center;
     .moo-page {
@@ -59,6 +59,18 @@
         text-align: center;
         
     }
+}
+.moo-shoot {
+    font-size: var(--moo-size-sm);
+    margin: var(--moo-size-sm);
+    .shooting {
+    height: 50px;
+    padding-bottom: var(--moo-size-xl);
+    span {
+        padding: var(--moo-size-m);
+    }
+}
+    
 }
   .bamboo-gallery {
     display: flex;
@@ -290,6 +302,17 @@
             
         }
     }
+    .moo-shoot {
+        font-size: var(--moo-size-m);
+        height: 65px;
+        padding-bottom: var(--moo-size-3xl);
+        .shooting {
+            width: auto;
+        span {
+            padding: var(--moo-size-xxl);
+        }
+    }
+    }
     .gallery-title {
         margin: 0 var(--moo-size-l);
         p {
@@ -488,7 +511,17 @@
             
         }
     }
-    
+    .moo-shoot {
+        font-size: var(--moo-size-l);
+        height: 115px;
+        padding-bottom: var(--moo-size-3xl);
+        .shooting {
+            width: auto;
+        span {
+            padding: var(--moo-size-xxl);
+        }
+    }
+    }
 
 }
 
@@ -562,6 +595,17 @@
             text-align: left;
             
         }
+    }
+    .moo-shoot {
+        font-size: var(--moo-size-xl);
+        height: 115px;
+        padding-bottom: var(--moo-size-3xl);
+        .shooting {
+            width: auto;
+        span {
+            padding: var(--moo-size-3xl);
+        }
+    }
     }
       .bamboo-gallery {
         display: flex;
@@ -763,6 +807,17 @@
         p {
             text-align:left; 
         }
+    }
+    .moo-shoot {
+        font-size: var(--moo-size-3xl);
+        height: 115px;
+        padding-bottom: var(--moo-size-3xl);
+        .shooting {
+            width: auto;
+        span {
+            padding: var(--moo-size-3xl);
+        }
+    }
     }
     .moo-btn-to-scrl {
       gap: var(--moo-size-5xl);
