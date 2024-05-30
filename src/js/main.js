@@ -17,7 +17,7 @@ const fadeIn = [
 const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
         if (entry.isIntersecting) {
-            entry.target.classList.remove('visually-hidden');
+            // entry.target.classList.remove('visually-hidden');
 
             for (let index = 0; index < entry.target.children.length; index++) {
                 const child = entry.target.children[index];
@@ -26,17 +26,19 @@ const observer = new IntersectionObserver((entries) => {
                 
                 setTimeout(() => {
                     animation.play();
+                    observer.unobserve(entry.target);
                 }, 100 * index);
 
                 animation.finished.then(() => {
                     // animation.persist();
+                    // observer.unobserve(entry);
                 });
             }
 
             continue;
         }
 
-        entry.target.classList.add('visually-hidden');
+        // entry.target.classList.add('visually-hidden');
     }
 }, { threshold: 0.2, root: null });
 
