@@ -17,6 +17,8 @@ const fadeIn = [
 const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
         if (entry.isIntersecting) {
+            entry.target.classList.remove('visually-hidden');
+
             for (let index = 0; index < entry.target.children.length; index++) {
                 const child = entry.target.children[index];
                 const animation = child.animate(...fadeIn);    
@@ -27,12 +29,16 @@ const observer = new IntersectionObserver((entries) => {
                 }, 100 * index);
 
                 animation.finished.then(() => {
-                    animation.persist();
+                    // animation.persist();
                 });
             }
+
+            continue;
         }
+
+        entry.target.classList.add('visually-hidden');
     }
-}, { rootMargin: "-50px" });
+}, { threshold: 0.2, root: null });
 
 const photos = document.querySelectorAll('[photos]');
 
