@@ -473,4 +473,13 @@ header {
     background: var(--moo-clr-black);
   }
 }
+  &-fade-in {
+    animation: fade-in 0.3s ease-in 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }  
+}
+
+[photos] > .photo {
+  opacity: 0;
 }
