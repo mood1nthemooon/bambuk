@@ -30,26 +30,15 @@
         }
     }
 }
-  .moo-about-me-title-xs {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: "Michroma", sans-serif;
-    font-size: var(--moo-size-l);
-    padding: var(--moo-size-sm);
-    border-bottom: 0.5px solid silver;
-    p {
-        margin: 0;
-    }
-  }
 .moo-about-me-title {
     display: none;
 }
 .moo-about-me-sub {
-    font-size: var(--moo-size-m);
+    font-size: var(--moo-size-l);
     padding: var(--moo-size-sm);
     justify-content: center;
+    align-items: center;
+    width: 350px;
     .moo-page {
         font-size: var(--moo-size-xl);
         justify-content: end;
@@ -60,15 +49,34 @@
         
     }
 }
+
+.moo-title {
+    .ab-me-span {
+        font-size: var(--moo-size-4xl);
+        
+    }
+}
 .moo-shoot {
-    font-size: var(--moo-size-sm);
+    display: none;
+}
+.moo-shoot-xs {
+    font-size: var(--moo-size-m);
     margin: var(--moo-size-sm);
     .shooting {
+    display: flex;
     height: 50px;
     padding-bottom: var(--moo-size-xl);
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
     span {
         padding: var(--moo-size-m);
+        border-radius: 100px;
+        background-color: var(--moo-clr-black);
     }
+    span:hover {
+        background-color: var(--moo-clr-orange);
+      }
 }
     
 }
@@ -79,6 +87,8 @@
   .moo-btn-to-scrl {
     gap: var(--moo-size-m);
     border: 0;
+    padding: 0;
+    margin-bottom: var(--moo-size-l);
   }
   .moo-overlay-image {
     border-radius: 2rem;
@@ -260,6 +270,7 @@
     .moo-btn-to-scrl {
     gap: var(--moo-size-m);
     border: 0;
+    padding: var(--moo-size-3xl);
     
     }
     .moo-overlay-image {
@@ -306,6 +317,7 @@
         font-size: var(--moo-size-m);
         height: 65px;
         padding-bottom: var(--moo-size-3xl);
+        display: flex;
         .shooting {
             width: auto;
         span {
