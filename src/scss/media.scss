@@ -303,6 +303,7 @@
         height: 490px;
         padding: var(--moo-size-xl);
         display: flex;
+        white-space: nowrap;
     }
     .moo-about-me-sub {
         font-size: var(--moo-size-l);
