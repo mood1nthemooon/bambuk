@@ -5,7 +5,7 @@
     padding-top: var(--moo-size-3xl);
     gap: var(--moo-size-xl);
     .moo-title {
-      font-size: var(--moo-size-l);
+      font-size: var(--moo-size-m);
     }
   }
   .logo {
@@ -14,7 +14,8 @@
     font-size: var(--moo-size-m);
   }
   .bamboo-main_deck {
-    top: 40vh;
+    top: 35vh;
+    
   }
   .about-me {
     padding: 10px;
@@ -257,15 +258,15 @@
     header {
       padding: var(--moo-size-4xl) var(--moo-size-7xl);
       .moo-title.logo {
-        font-size: var(--moo-size-xl);
+        font-size: var(--moo-size-l);
       }
     }
     .logo {
-    font-size: var(--moo-size-xl);
-    text-align: left;
+    font-size: var(--moo-size-l);
+    text-align: center;
     }
     .bamboo-main_deck {
-    top: 35vh;
+    top: 20vh;
     }
     .moo-btn-to-scrl {
     gap: var(--moo-size-m);
@@ -778,11 +779,12 @@
     header {
       padding: var(--moo-size-4xl) var(--moo-size-7xl);
       .moo-title.logo {
-        font-size: var(--moo-size-xl);
+        font-size: var(--moo-size-l);
       }
     }
     .bamboo-main_deck {
-      top: 30vh;
+      margin: var(--moo-size-8xl);
+      top: 45vh;
     }
     .gallery-title {
         margin: 0 var(--moo-size-l);
