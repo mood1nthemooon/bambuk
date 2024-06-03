@@ -55,11 +55,11 @@ h6 {
 }
 
 header {
-  z-index: 1;
+  z-index: 6;
   position: fixed;
   background-color: var(--moo-clr-black);
   width: 100%;
-  height: 60px;
+  height: 70px;
 }
 .product,
 .people,
@@ -72,7 +72,6 @@ header {
 .navbar-toggler {
   padding: var(--moo-size-xs);
   justify-self: start;
-
   svg {
     width: var(--moo-size-3xl);
     height: var(--moo-size-3xl);
@@ -80,12 +79,6 @@ header {
       stroke: var(--moo-clr-white);
       stroke-width: 2;
       stroke-linecap: round;
-    }
-  }
-
-  &:hover, &[aria-expanded=true] {
-    svg path {
-      stroke: var(--moo-clr-blue);
     }
   }
 }
@@ -372,7 +365,7 @@ header {
     }
     &::after {
       right: 0;
-      bottom: calc($font-size/2 * -1);
+      bottom: calc($font-size/4 * -1);
     }
 
     &_deck {
@@ -383,7 +376,7 @@ header {
 
       img {
         position: relative;
-        width: 18vw;
+        width: 16vw;
 
         $image-rotation-step: 10deg;
         $rotation-multipliers: 1 -1, 2 0, 3 1;
@@ -433,7 +426,6 @@ header {
     animation: poptop 1s ease 0.2s 1 forwards;
     pointer-events: none;
     text-transform: uppercase;
-    // line-height: 100px;
 
     @each $line in 1, 2, 3 {
       span:nth-child(#{$line}) {
@@ -447,11 +439,6 @@ header {
     min-height: 100vh;
     position: relative;
 
-    // &.about-section {
-    //   height: 100vh;
-    //   max-height: 100vh;
-    // }
-  // }
 
   &-about {
     position: relative;

@@ -14,8 +14,13 @@
     font-size: var(--moo-size-m);
   }
   .bamboo-main_deck {
-    top: 35vh;
-    
+    top: 32vh;
+    img {
+      width: 33vw;
+    }
+  }
+  .bamboo-hello {
+    font-size: 38px;
   }
   .about-me {
     padding: 10px;
@@ -54,7 +59,6 @@
 .moo-title {
     .ab-me-span {
         font-size: var(--moo-size-4xl);
-        
     }
 }
 .moo-shoot {
@@ -267,6 +271,14 @@
     }
     .bamboo-main_deck {
     top: 20vh;
+    img {
+      width: 20vw;;
+    }
+    }
+    .bamboo-hello {
+      margin-top: 100px;
+      font-size: var(--moo-size-3xl);
+
     }
     .moo-btn-to-scrl {
     gap: var(--moo-size-m);
@@ -555,6 +567,15 @@
     text-align: left;
     font-size: var(--moo-size-m);
     }
+    .bamboo_deck {
+      img {
+        width: 20vw;
+      }
+
+    }
+    .bamboo-hello {
+      font-size: var(--moo-size-5xl);
+    }
     .moo-btn-to-scrl {
         gap: var(--moo-size-5xl);
         border-top: 1px solid silver;
@@ -784,7 +805,13 @@
     }
     .bamboo-main_deck {
       margin: var(--moo-size-8xl);
-      top: 45vh;
+      top: 35vh;
+      img {
+        width: 16vw;
+      }
+    }
+    .bamboo-hello {
+      font-size: inherit;
     }
     .gallery-title {
         margin: 0 var(--moo-size-l);
