@@ -1,24 +1,54 @@
-name: Build and Deploy
+name: Build & Deploy
+
 on:
-    push:
-        branches:
-            - main
-permissions:
-  contents: write
+  push:
+    branches:
+      - main
+
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+  build:
+    name: All Steps (Build, Deploy)
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Cache node modules
+        uses: actions/cache@v3
         with:
-          folder: dist # The folder the action should deploy.
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: ⚙️ Install Dependencies
+        run: npm ci
+
+      - name: 🧼 Clean Distribution Directory
+        run: npm run ci:clean
+
+      - name: 🔨 Build Application
+        run: npm run build
+
+      - name: 📦 List Files in Distribution Directory
+        run: ls -R ./dist
+
+      - name: 📂 FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.CD_FTP_SERVER }}
+          username: ${{ secrets.CD_FTP_USERNAME }}
+          password: ${{ secrets.CD_FTP_PASSWORD }}
+          local-dir: "dist/"
+          server-dir: "public_html/"
+          exclude: |
+            .htaccess
