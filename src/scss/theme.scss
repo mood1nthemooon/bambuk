@@ -225,7 +225,7 @@ header {
     padding: var(--moo-size-4xl);
   }
   &-sub-section {
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 32px;
@@ -319,6 +319,19 @@ header {
     align-items: center;
     justify-content: center;
     gap: 30px;
+  }
+  &-sign_up-text {
+    font-size: var(--moo-size-xl);
+    font-family: "Montserrat", sans-serif;
+    width: 640px;
+    padding: 30px;
+    border: 0.5px solid var(--moo-clr-white);
+    margin: 10px;
+    border-radius: 20px;
+    
+  }
+  &-sign_up  {
+    width: 700px;
   }
 }
 .socials {

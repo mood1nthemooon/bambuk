@@ -209,6 +209,22 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+  .moo-sign_up-text {
+    font-size: var(--moo-size-m);
+    width: 170px;
+    padding: 20px;
+    p {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .moo-sign_up {
+    width: 260px;
+    padding: 10px;
+    
+  }
   .moo-contacts {
     .moo-title-contact {
         justify-content: center;
@@ -466,6 +482,13 @@
           padding: 0;
         }
       }
+      .moo-sign_up-text {
+        font-size: var(--moo-size-m);
+        width: 350px;
+      }
+      .moo-sign_up {
+        width: 450px;
+      }
       .socials {
         width: 500px;
         padding: 0;
@@ -549,6 +572,13 @@
         }
     }
     }
+    .moo-sign_up-text {
+      font-size: var(--moo-size-m);
+      width: 470px;
+    }
+    .moo-sign_up {
+      width: 500px;
+    }
 
 }
 
@@ -567,11 +597,10 @@
     text-align: left;
     font-size: var(--moo-size-m);
     }
-    .bamboo_deck {
+    .bamboo-main-deck {
       img {
         width: 20vw;
       }
-
     }
     .bamboo-hello {
       font-size: var(--moo-size-5xl);
@@ -751,6 +780,13 @@
         .photo {
           width: 45%;
         }
+      }
+      .moo-sign_up-text {
+        font-size: var(--moo-size-l);
+        width: 520px;
+      }
+      .moo-sign_up {
+        width: 560px;
       }
       .socials {
         width: 900px;
@@ -1003,13 +1039,20 @@
       padding: var(--moo-size-3xl);
       width: 1000px;
     }
+    .moo-sign_up-text {
+      font-size: var(--moo-size-xl);
+      width: 640px;
+      padding: 30px;
+    }
+    .moo-sign_up {
+      width: 700px;
+    }
     .moo-contacts {
       .moo-title-section {
         font-size: var(--moo-size-7xl);
         width: 1100px;
         gap: var(--moo-size-3xl);
         padding: var(--moo-size-4xl);
-        padding-top: 0;
       }
     }
     .socials {
